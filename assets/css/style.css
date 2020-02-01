@@ -8,15 +8,12 @@ body{
 header {
     background-color: #ffffff;
     border-bottom: 2px solid #cccccc;
-    /* width: calc(100%-600px); */
     height: 75px;
     font-family: 'Georgia', 'Times New Roman', Times, serif;
-    /* clear: both; */
 }
 
-
-/* styling for index.html */
-.name {
+/* generic styling for each page */
+.name { /* My name styling */
     margin-left: 200px;
     background-color: #4aaaa5;
     float: left;
@@ -26,7 +23,7 @@ header {
     color: white;
 }
 
-.links {
+.links { /* nav bar styling */
     padding-top: 25px;
     margin-left: 900px;
     white-space: nowrap;
@@ -34,16 +31,16 @@ header {
     text-decoration: none;
 }
 
-header a {
+header a { /* header for each page title styling */
     padding-left: 10px;
     padding-right: 10px;
 }
 
-#name2 {
+header h2 { /* header for each page title styling */
     padding-bottom: 30px;
 }
 
-.mainsection {
+.mainsection { /* main body for each section styling */
     margin: 20px 200px 20px 200px;
     background-color: #ffffff;
     padding: 20px;
@@ -52,23 +49,13 @@ header a {
     position: relative;
 }
 
-.aboutme,
-.p_main {
-    color: #4aaaa5;
-    border-bottom: 2px solid #cccccc;
-    width: 960px;
-    padding-bottom: 15px;
+.mainsection img { /* aligning my imsage */
+    float: left; 
+    margin-right: 30px; 
+    margin-bottom: 30px;
 }
 
-.maintext {
-    color: #928d8d;
-}
-
-.maintext p {
-    line-height: 30px;
-}
-
-footer {
+footer { /* footer settings */
     background-color: #666666;
     border-top: 8px solid #4aaaa5;
     position: fixed;
@@ -81,32 +68,41 @@ footer {
     clear: both;
 }
 
-.mainsection img {
-    float: left; 
-    margin-right: 30px; 
-    margin-bottom: 30px;
+
+/* Styling specifics for index.html */
+.aboutme { /* container settings for about me section */
+    color: #4aaaa5;
+    border-bottom: 2px solid #cccccc;
+    width: 960px;
+    padding-bottom: 15px;
 }
 
-/* styling for portfolio */
-.p_container {
+.maintext p { /* line spacing and color for main text */
+    line-height: 30px;
+    color: #928d8d;
+}
+
+
+/* Styling specifics for portfolio.html */
+.p_container { /* push paragraphs for alignment */
     margin-left: 200px;
 }
 
-.column1 {
+.column1 { /* column 1 picture settings */
     height: 250px;
     float: left;
 }
 
-.column2 {
+.column2 { /* column 2 picture settings */
     height: 250px; 
     overflow: auto;
 }
 
-.lastrow {
+.lastrow { /* fix picture overhang */
     padding-bottom: 50px;
 }
 
-.column1text {
+.column1text { /* Column 1 text and banner overlay */
     position: relative;
     bottom: 80px;
     left: 16px;
@@ -118,7 +114,7 @@ footer {
     padding-left: 15px;
 }
 
-.column2text {
+.column2text { /* Column 2 text and banner overlay */
     position: relative;
     background-color: #4aaaa5;
     left: -185px;
@@ -130,16 +126,15 @@ footer {
     color: white;
 }
 
-/* contact.html */
-input {
+/* Styling specifics for contact.html */
+input { /* Name input */
     width: 100%;
     height: 50px;
     color: rgb(112, 109, 109);
     padding-left: 20px;
 }
 
-input[type=submit]
-{
+input[type=submit] { /* Email input */
     width: 15%;
     font-size: 20;
     margin-top: 50px;
@@ -149,21 +144,9 @@ input[type=submit]
     color: white;
 }
 
-.message {
+.message { /* Message input */
     padding-top: 20px;
     padding-left: 20px;
     height: 200px;
     width: 100%;
-}
-
-.group:before,
-.group:after {
-    content:"";
-    display: table;
-}
-.group:after {
-    clear: both;
-}
-.group{
-    *zoom: 1;
 }
